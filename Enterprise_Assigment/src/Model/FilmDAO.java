@@ -9,8 +9,8 @@ public class FilmDAO {
 	int Result = 1;
 	Connection conn = null;
     Statement stmt = null;
-	String user = "jackPhilllips";
-    String password = "Password123";
+	String user = "------";
+    String password = "------";
     // url used to access amazon endpoint
     String url = "jdbc:mysql://enterprise.cmjoubel9ckt.us-east-2.rds.amazonaws.com:3306/EnterpriseProg";
 
