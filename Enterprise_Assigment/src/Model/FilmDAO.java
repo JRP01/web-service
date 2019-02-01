@@ -12,7 +12,7 @@ public class FilmDAO {
 	String user = "------";
     String password = "------";
     // url used to access amazon endpoint
-    String url = "jdbc:mysql://enterprise.cmjoubel9ckt.us-east-2.rds.amazonaws.com:3306/EnterpriseProg";
+    String url = "-------";
 
 	public FilmDAO() {}
 
