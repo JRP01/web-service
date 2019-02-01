@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="./Scripts/ajax-utils.js"
+        type="text/javascript"></script>
+<script src="./Scripts/AJAX.js"
+        type="text/javascript"></script>
+<script src="./Scripts/ajax-param-string.js"
+        type="text/javascript"></script>
+</head>
+<body>
+<body>
+<div align="center">
+<table border="5">
+  <tr><th class="title">Ajax: Handling Server Data</th></tr>
+</table>
+
+<p/>
+<fieldset>
+<legend>All films</legend>
+<form action="#">
+<input type="button" value="XML"
+         onclick='xmlfilmTable("film-table")'/>
+   <input type="button" value="JSON"
+         onclick='jsonfilmTable("film-table")'/>     
+   <input type="button" value="String"
+         onclick='stringFilmTable("film-table" )'/>  <br/> 
+                                  
+   
+	</textarea>         
+</form><p/>
+<div id="film-table"></div>
+</fieldset>
+
+<p/>
+<fieldset>
+<legend>Search Films By ID</legend>
+<form action="#">
+  <label for="filmID">Customer ID 1:</label>
+  <input type="text" id="filmID"/><br/>
+  <input type="button" value="XML"
+         onclick='xmlSearchFilm("film-search-table","filmID")'/>
+  <input type="button" value="JSON"
+         onclick='jsonSearchFilm("film-search-table","filmID")'/>
+   <input type="button" value="String"
+         onclick='stringSearchFilm("film-search-table","filmID")'/>                                 
+</form><p/>
+<div id="film-search-table"></div>
+</fieldset>
+
+<p/>
+<fieldset>
+<legend>deleteFilm</legend>
+<form action="#">
+<label for="delete">film id:</label>
+  <input type="text" id="delete"/><br/>
+<input type="button" value="delete"
+         onclick='filmdelete("delete-status")'/>  
+</form><p/>
+<div id="delete-status"></div>
+</fieldset>
+
+<p/>
+<fieldset>
+<legend>insertFilm</legend>
+<form action="#">
+  <br/>
+  <label for="insert-json">film json:</label>
+  <input type="text" id="json"/><br/>
+<input type="button" value="insert"
+         onclick='insertFilm("insert-message")'/>  
+ 
+</form><p/>
+<div id="insert-message" ></div>
+</fieldset>
+
+<fieldset>
+<legend>update</legend>
+<form action="#">
+  <br/>
+  <label for="updateID">film ID:</label>
+  <input type="text" id="updateID"/><br/>
+  <label for="updatejson">update json:</label>
+  <input type="text" id="updatejson"/><br/>
+<input type="button" value="update"
+         onclick='updateFilm("update-message")'/>  
+ 
+</form><p/>
+<div id="update-message" ></div>
+</fieldset>
+</div>
+
+<br/><br/><br/>
+</body></html>
